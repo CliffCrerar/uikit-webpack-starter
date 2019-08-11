@@ -25,7 +25,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'Uikit webpack',
             fileName: 'index.html',
-            meta: ''
+            meta: require('./meta.json')
         }),
         new FaviconsWebpackPlugin(favicon),
         new ManifestPlugin(),
