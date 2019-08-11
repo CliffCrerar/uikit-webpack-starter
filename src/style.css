@@ -1,1 +1,34 @@
 /* global style */
+
+@import '../node_modules/uikit/dist/css/uikit.css';
+html,
+body {
+    position: relative;
+    box-sizing: border-box !important;
+    padding: 0;
+    margin: 0;
+}
+
+.app-element {
+    position: relative;
+    background: #298EF0 top center / 100vh 100vw no-repeat;
+    min-height: 100vh;
+    height: auto;
+}
+
+.uk-grid-inner {
+    position: absolute;
+    top: 20%;
+}
+
+.uk-grid-inner img {
+    padding: 100px;
+}
+
+.uikit-bg {
+    position: absolute;
+}
+
+.uk-text-white {
+    color: white;
+}

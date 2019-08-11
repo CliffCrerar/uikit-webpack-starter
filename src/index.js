@@ -1,6 +1,7 @@
+import intro from "./intro";
 
 var app = document.createElement('div');
 
-app.innerHTML = '<h1>Uikit with webpack starter app</h1>'
+app.appendChild(intro)
 
 export default app
