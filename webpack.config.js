@@ -8,7 +8,7 @@ const webpack = require('webpack');
 const favicon = './src/img/favicon.png'
 
 module.exports = {
-    entry: './src/app.js',
+    entry: './src/index.js',
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
@@ -34,13 +34,13 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css$/,
+                test: /\.s[ac]ss$/i,
                 use: [
-                    'style-loader',
-                    'css-loader'
-                    ,
-                ]
-            },
+                  'style-loader',
+                  'css-loader',
+                  'sass-loader',
+                ],
+              },
             {
                 test: /\.(png|svg|jpg|gif)$/,
                 use: [
