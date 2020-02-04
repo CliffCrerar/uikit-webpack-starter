@@ -1,7 +1,15 @@
-import intro from "./intro";
 
-var app = document.createElement('div');
+import './style.scss';
+import UIkit from 'uikit';
+import Icons from 'uikit/dist/js/uikit-icons';
+import litHtmlTemplate from './intro'
+import { render, html } from 'lit-html';
 
-app.appendChild(intro)
+UIkit.use(Icons);
 
-export default app
+const main = html`
+	<main class="app-element">
+		${litHtmlTemplate}
+	</main>`
+
+render(main,document.body)
